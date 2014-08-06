@@ -103,6 +103,7 @@ namespace PostmarkDotNet
             TextBody = isHtml ? null : body;
             HtmlBody = isHtml ? body : null;
             Headers = headers ?? new NameValueCollection(0);
+            Attachments = new List<PostmarkMessageAttachment>(0);
         }
 
 
